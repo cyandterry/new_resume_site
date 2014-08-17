@@ -1,7 +1,4 @@
-
 $(document).ready(function(){
-
-
     /* Scroll hire me button to contact page */
     $('.hire-me').click(function(){
         $('html, body').animate({
@@ -47,7 +44,6 @@ $(document).ready(function(){
         });
     });
 
-
     /* Magnific Popup */
     $('.grid-wrapper').magnificPopup({
         delegate: 'a', 
@@ -57,11 +53,15 @@ $(document).ready(function(){
         }
     });
 
-
-
     /* Sticky menu */
-    $(".navbar").sticky({topSpacing: 0});
-
+    //$(".navbar").sticky({topSpacing: 0});
+    $(window).scroll(function(){
+        if( $(window).scrollTop() > 80){
+            $('.navbar').removeClass('navbar-transparent');
+        }else{
+            $('.navbar').addClass('navbar-transparent');
+        }
+    });
 
     /* Scroll spy and scroll filter */
     $('#main-menu').onePageNav({
@@ -74,7 +74,6 @@ $(document).ready(function(){
     });
 
     /* Charts*/
-    
     $('.chart').waypoint(function() {
         $(this).easyPieChart({
             barColor: '#3498db',
@@ -136,6 +135,6 @@ $(document).ready(function(){
         }
     }); 
 
-
+    
 
 });
