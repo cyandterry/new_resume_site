@@ -1,1 +1,11 @@
-<h1>This is a new Resume Site for myself</h1>
+##Resume Site for myself
+
+Normal html + css + javascript
+
+Libraries inlcuding:
+* jquery
+* Bootstrap
+* moderniz
+* isotope
+* easy-pie-chart
+* sticky
